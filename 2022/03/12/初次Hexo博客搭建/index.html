@@ -22,30 +22,37 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Do not go gentle into that good night.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Interstellar">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="1. 设置菜单   主题配置文件，即 themes&#x2F;next 下的_config.yml，查找menu；  “||”前面的是目标链接，后面是图标名称，next 使用的图标全是图标库 - Font Awesome 中文网的，有想用的图标直接在fontawesome上找图标的名称就行。  新添加的菜单需要翻译对应的中文，打开theme&#x2F;next&#x2F;languages&#x2F;zh-CN.yml，在menu下设置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初次Hexo博客搭建">
+<meta property="og:url" content="http://example.com/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Interstellar">
-<meta property="og:description" content="Do not go gentle into that good night.">
+<meta property="og:description" content="1. 设置菜单   主题配置文件，即 themes&#x2F;next 下的_config.yml，查找menu；  “||”前面的是目标链接，后面是图标名称，next 使用的图标全是图标库 - Font Awesome 中文网的，有想用的图标直接在fontawesome上找图标的名称就行。  新添加的菜单需要翻译对应的中文，打开theme&#x2F;next&#x2F;languages&#x2F;zh-CN.yml，在menu下设置">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/2022_03_12_Hexo/Canvas.png">
+<meta property="article:published_time" content="2022-03-12T07:36:43.000Z">
+<meta property="article:modified_time" content="2022-03-12T08:00:46.355Z">
 <meta property="article:author" content="HreateHakunari">
+<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="博客">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/2022_03_12_Hexo/Canvas.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Interstellar</title>
+  <title>初次Hexo博客搭建 | Interstellar</title>
   
 
 
@@ -164,9 +171,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -182,10 +190,9 @@
       <meta itemprop="name" content="Interstellar">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">初次Hexo博客搭建</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          初次Hexo博客搭建
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -208,6 +215,13 @@
             </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -218,7 +232,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4>1. 设置菜单</h4>
+        <h4>1. 设置菜单</h4>
 
 <ul>
 <li><p>主题配置文件，即 <code>themes/next</code> 下的_config.yml，查找menu；</p>
@@ -391,7 +405,6 @@
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">reward_settings:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span>   <span class="comment">#改为true</span></span><br><span class="line">  <span class="attr">animation:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">comment:</span> <span class="string">原创技术分享，您的支持将鼓励我继续创作</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">  <span class="attr">wechatpay:</span> <span class="string">/images/wechatpay.png</span>   <span class="comment">#将前面的#去掉</span></span><br><span class="line">  <span class="attr">alipay:</span> <span class="string">/images/alipay.png</span>         <span class="comment">#将前面的#去掉</span></span><br><span class="line">  <span class="comment">#paypal: /images/paypal.png</span></span><br><span class="line">  <span class="comment">#bitcoin: /images/bitcoin.png</span></span><br></pre></td></tr></table></figure>
 
 
-      
     </div>
 
     
@@ -399,15 +412,60 @@
     
 
     
+        <div class="reward-container">
+  <div>原创技术分享，您的支持将鼓励我继续创作。</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpg" alt="HreateHakunari 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="HreateHakunari 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>HreateHakunari
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="初次Hexo博客搭建">http://example.com/2022/03/12/初次Hexo博客搭建/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/tags/Blog/" rel="tag"># Blog</a>
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
+
+        
+
+
+        
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -460,6 +518,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">1. 设置菜单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">2. 设置建站时间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text">3. 设置头像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">4.</span> <span class="nav-text">4. 网站图标设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">5.</span> <span class="nav-text">5. 设置动态背景</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 canvas nest 风格</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">6.</span> <span class="nav-text">6. 设置背景图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">7.</span> <span class="nav-text">7. 主页文章添加阴影效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">8.</span> <span class="nav-text">8. 添加顶部加载条</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">9.</span> <span class="nav-text">9. 设置预览概要</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">10.</span> <span class="nav-text">10. 设置侧边栏显示效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">11.</span> <span class="nav-text">11. 侧边栏推荐阅读</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">12.</span> <span class="nav-text">12. 添加社交链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">13.</span> <span class="nav-text">13. 设置博文内链接为蓝色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">14.</span> <span class="nav-text">14. 显示文章字数和阅读时长</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">15.</span> <span class="nav-text">15. 显示站点文章总字数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">16.</span> <span class="nav-text">16. 设置文章末尾“本文结束”标记</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">17.</span> <span class="nav-text">17. 文章末尾添加版权说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">18.</span> <span class="nav-text">18. 添加访问量统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">19.</span> <span class="nav-text">19. 安装RSS插件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">20.</span> <span class="nav-text">20. 忽略要编译的文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">21.</span> <span class="nav-text">21. 代码块样式定义：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">22.</span> <span class="nav-text">22. Hexo博客提交百度&#x2F;Google收录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">23.</span> <span class="nav-text">23. 添加打赏</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
