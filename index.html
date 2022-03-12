@@ -170,6 +170,185 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="HreateHakunari">
+      <meta itemprop="description" content="Do not go gentle into that good night.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Interstellar">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">《head first HTML and CSS》读书笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-03-12 16:37:46 / 修改时间：16:46:06" itemprop="dateCreated datePublished" datetime="2022-03-12T16:37:46+08:00">2022-03-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="1-Web语言"><a href="#1-Web语言" class="headerlink" title="1. Web语言"></a>1. Web语言</h3><ul>
+<li><strong>Web服务器</strong>：负责一直等待来自Web浏览器的请求（如：请求Web页面、图像或声音等资源），并把找到的资源发回给浏览器。</li>
+<li><strong>Web浏览器</strong>：向Web服务器发送请求，获取HTML页面并显示。</li>
+</ul>
+<h3 id="2-深入了解超文本-“HT”"><a href="#2-深入了解超文本-“HT”" class="headerlink" title="2. 深入了解超文本 “HT”"></a>2. 深入了解超文本 “HT”</h3><ul>
+<li>超链接：&lt;a href&#x3D;”…”&gt;标签可以创建一个超文本链接到另一个Web页面。</li>
+<li>“ ..&#x2F; “ 代表父文件夹；</li>
+<li>不同方式展示文本：&lt;e&gt;</li>
+<li>文本强调：&lt;strong&gt;</li>
+<li>日期或时间：&lt;time&gt;</li>
+<li>段落：&lt;p&gt;</li>
+<li>换行：&lt;br&gt;</li>
+<li>图片：&lt;image&gt;</li>
+<li>短引用文本：&lt;q&gt;<ul>
+<li>引用文本使用标签而非双引号的作用：体现出页面的结构、可以配合CSS改变引用文本的样式；</li>
+</ul>
+</li>
+<li>长引用文本：&lt;blockquote&gt;</li>
+</ul>
+<h4 id="2-1-块元素和内联元素"><a href="#2-1-块元素和内联元素" class="headerlink" title="2.1 块元素和内联元素"></a>2.1 块元素和内联元素</h4><ul>
+<li>&lt;blockquote&gt;是一个块（block）元素，而&lt;q&gt;是一个内联（inline）元素。<ul>
+<li>每个块元素都单独显示，就好像前后都有一个换行。</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-2-更多其他标签"><a href="#2-2-更多其他标签" class="headerlink" title="2.2 更多其他标签"></a>2.2 更多其他标签</h4><ul>
+<li><p>列表</p>
+<ul>
+<li>有序列表（ordered list, ol）：使用元素&lt;ol&gt;包围列表项&lt;li&gt;，将作为一个有序列表显示；</li>
+<li>无需列表（unordered list, ul）：使用元素&lt;ul&gt;包围列表项&lt;li&gt;，将作为一个无序列表显示；</li>
+<li>列表项（list item, li）：使用元素&lt;li&gt;作为列表项；</li>
+</ul>
+<p>ex:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Walla Walla, WA<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Magic City, ID<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Bountiful, UT<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Last Chance, CO<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Why, AZ<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Truth or Consequences, NM<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>ol、ul、li都是块元素；因为在它们前后都有换行；</li>
+</ul>
+</li>
+<li><p>特殊字符</p>
+<p>当需要在Web页面中使用一些HTML的特殊字符时，需要使用其字符相应的字符实体（character entity）的简单缩写来代替。</p>
+<ul>
+<li>&gt;字符的缩写：&amp;gt；</li>
+<li>&lt;字符的缩写：&amp;lt；</li>
+<li>&amp;字符的缩写：&amp;amp；</li>
+<li>版权符号的缩写：&amp;copyright；</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-“连接”"><a href="#3-“连接”" class="headerlink" title="3. “连接”"></a>3. “连接”</h3><ul>
+<li>FTP：文件传输协议（File Transfer Protocol）</li>
+<li>网站发布：p130</li>
+</ul>
+<h4 id="3-1-URL"><a href="#3-1-URL" class="headerlink" title="3.1 URL"></a>3.1 URL</h4><ul>
+<li>URL是什么：在浏览器中输入的Web地址称为URL，统一资源定位符（Uniform Resource Locators）。是一个全局地址，可以用来定位Web上的任意资源。除了指定资源的位置，URL还可以指定用来获取资源的协议。</li>
+<li>URL拆解：<ul>
+<li><code>http/https</code>：指出用来获取资源的协议；</li>
+<li><code>www.xxx.com</code>：网站名；</li>
+<li><code>/index.html/</code>：从根文件夹到资源的绝对路径；</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-2-HTTP"><a href="#3-2-HTTP" class="headerlink" title="3.2 HTTP"></a>3.2 HTTP</h4><ul>
+<li>HTTP是什么：超文本传输协议（Hypertext Transfer Protocol），是在Web上传输超文本文档的公认方法（协议）。</li>
+<li>在每次浏览器的地址栏中输入一个URL时，浏览器就会使用HTTP向服务器请求响应的资源。</li>
+<li>除此之外还有 <code>file</code> 、<code>ftp</code> 、<code>mail</code> 、<code>https</code> 等协议</li>
+</ul>
+<h4 id="3-3-绝对路径"><a href="#3-3-绝对路径" class="headerlink" title="3.3 绝对路径"></a>3.3 绝对路径</h4><ul>
+<li>绝对路径告诉服务器如何从根文件夹到达某个特定的页面或文件，绝对路径总是从“根”开始（用”&#x2F;“表示根）。<ul>
+<li>例如：”&#x2F;cars&#x2F;new&#x2F;inventory.html”</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-4-完善的Web页面"><a href="#3-4-完善的Web页面" class="headerlink" title="3.4 完善的Web页面"></a>3.4 完善的Web页面</h4><ul>
+<li><p>为链接增加标题以便访问：&lt;a&gt;元素有一个 <code>title</code> 属性，就是用来提供链接信息的。</p>
+<p>ex:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://wickedlysmart.com/buzz&quot;</span></span></span><br><span class="line"><span class="tag">   <span class="attr">title</span>=<span class="string">&quot;Read all about caffeine on the Buzz&quot;</span>&gt;</span>Caffeine Buzz<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>想要直接链接到页面中的某个特定位置，使用 &lt;a&gt; 元素的 <code>id</code> 属性，允许直接访问页面中的某个特定点。</p>
+<ul>
+<li><p>先找到页面中要创建锚点的位置，可以是页面上的任何文本。</p>
+</li>
+<li><p>为目标选择一个标识符名，并插入在其 <code>id</code> 属性中；</p>
+</li>
+<li><p>若想要链接到页面中的特定目标，只需在链接后添加一个 “#” ，再加上目标的标识符，如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;index.html#chai&quot;</span>&gt;</span>See Chai Tea<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="3-5-总结"><a href="#3-5-总结" class="headerlink" title="3.5 总结"></a>3.5 总结</h4><ul>
+<li>将以上几部分结合起来（协议+服务器+网站+绝对路径），就有了一个URL，利用URL，可以请求浏览器从Web获取一个页面。<ul>
+<li>协议部分告诉浏览器应该使用什么方法来获取资源；</li>
+<li>网站部分告诉浏览器要从互联网上的哪个计算机获取资源；</li>
+<li>绝对路径部分告诉服务器要找的资源是哪个资源；</li>
+</ul>
+</li>
+<li>如果浏览器向Web服务器请求一个目录而不是文件时，如：<code>http://www.starbuzzcoffee.com/images/</code>，会发生什么？<ul>
+<li>Web服务器收到类似这样的请求时，会尝试查找这个目录中的一个默认文件。通常默认文件名为”index.html”或”default.html”，找到了就会返回给浏览器显示；</li>
+<li>若请求的URL结尾没有加上’&#x2F;‘，如<code>http://www.starbuzzcoffee.com</code>，若这个目录确实存在，服务器会帮忙加上末尾的斜线，改为<code>http://www.starbuzzcoffee.com/</code>，就会寻找默认文件，等同于<code>http://www.starbuzzcoffee.com/index.html</code></li>
+</ul>
+</li>
+<li>页面工作流程：<ul>
+<li>用户在浏览器中输入<code>http://www.starbuzzcoffee.com/drinks</code>；</li>
+<li>浏览器向Web服务器发送HTTP请求：我能得到文件”&#x2F;drinks&#x2F;“吗？</li>
+<li>服务器得到了目录，寻找目录下的默认文件，并找到了”&#x2F;drinks&#x2F;index.html”文件；</li>
+<li>Web服务器向浏览器发送HTTP响应，并发送文件”&#x2F;drinks&#x2F;index.html”；</li>
+</ul>
+</li>
+<li>端口：网站名就像一个小区地址，端口就像是地址的门牌号。通常Web上所有东西都会传送到一个默认端口。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -475,7 +654,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -488,7 +667,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -547,7 +726,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2.2k字</span>
+  <span class="post-count">博客全站共3.6k字</span>
 </div>
 
 
