@@ -22,21 +22,20 @@
     var CONFIG = {"hostname":"hreatehakunari.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="1. Web语言 Web服务器：负责一直等待来自Web浏览器的请求（如：请求Web页面、图像或声音等资源），并把找到的资源发回给浏览器。 Web浏览器：向Web服务器发送请求，获取HTML页面并显示。  2. 深入了解超文本 “HT” 超链接：&lt;a href&#x3D;”…”&gt;标签可以创建一个超文本链接到另一个Web页面。 “ ..&#x2F; “ 代表父文件夹； 不同方式展示文本：&amp;">
+  <meta name="description" content="02 基本命令1. 系统管理命令高级管理员：sudo su sudo -i">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《head first HTML and CSS》读书笔记">
-<meta property="og:url" content="http://hreatehakunari.com/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:title" content="Linux常用基本命令">
+<meta property="og:url" content="http://hreatehakunari.com/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Interstellar">
-<meta property="og:description" content="1. Web语言 Web服务器：负责一直等待来自Web浏览器的请求（如：请求Web页面、图像或声音等资源），并把找到的资源发回给浏览器。 Web浏览器：向Web服务器发送请求，获取HTML页面并显示。  2. 深入了解超文本 “HT” 超链接：&lt;a href&#x3D;”…”&gt;标签可以创建一个超文本链接到另一个Web页面。 “ ..&#x2F; “ 代表父文件夹； 不同方式展示文本：&amp;">
+<meta property="og:description" content="02 基本命令1. 系统管理命令高级管理员：sudo su sudo -i">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-03-12T08:37:46.000Z">
-<meta property="article:modified_time" content="2022-03-12T09:51:57.922Z">
+<meta property="article:published_time" content="2022-03-13T09:41:00.000Z">
+<meta property="article:modified_time" content="2022-03-13T09:42:17.231Z">
 <meta property="article:author" content="HreateHakunari">
-<meta property="article:tag" content="HTML">
-<meta property="article:tag" content="css">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://hreatehakunari.com/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+<link rel="canonical" href="http://hreatehakunari.com/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/">
 
 
 <script id="page-configurations">
@@ -49,7 +48,7 @@
   };
 </script>
 
-  <title>《head first HTML and CSS》读书笔记 | Interstellar</title>
+  <title>Linux常用基本命令 | Interstellar</title>
   
 
 
@@ -175,7 +174,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://hreatehakunari.com/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="http://hreatehakunari.com/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -188,7 +187,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          《head first HTML and CSS》读书笔记
+          Linux常用基本命令
         </h1>
 
         <div class="post-meta">
@@ -199,7 +198,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-03-12 16:37:46 / 修改时间：17:51:57" itemprop="dateCreated datePublished" datetime="2022-03-12T16:37:46+08:00">2022-03-12</time>
+              <time title="创建时间：2022-03-13 17:41:00 / 修改时间：17:42:17" itemprop="dateCreated datePublished" datetime="2022-03-13T17:41:00+08:00">2022-03-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -207,12 +206,12 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a>
+                  <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
                 </span>
             </span>
 
           
-            <span id="/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="post-meta-item leancloud_visitors" data-flag-title="《head first HTML and CSS》读书笔记" title="阅读次数">
+            <span id="/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" class="post-meta-item leancloud_visitors" data-flag-title="Linux常用基本命令" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -234,8 +233,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -250,118 +249,131 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="1-Web语言"><a href="#1-Web语言" class="headerlink" title="1. Web语言"></a>1. Web语言</h3><ul>
-<li><strong>Web服务器</strong>：负责一直等待来自Web浏览器的请求（如：请求Web页面、图像或声音等资源），并把找到的资源发回给浏览器。</li>
-<li><strong>Web浏览器</strong>：向Web服务器发送请求，获取HTML页面并显示。</li>
-</ul>
-<h3 id="2-深入了解超文本-“HT”"><a href="#2-深入了解超文本-“HT”" class="headerlink" title="2. 深入了解超文本 “HT”"></a>2. 深入了解超文本 “HT”</h3><ul>
-<li>超链接：&lt;a href&#x3D;”…”&gt;标签可以创建一个超文本链接到另一个Web页面。</li>
-<li>“ ..&#x2F; “ 代表父文件夹；</li>
-<li>不同方式展示文本：&lt;e&gt;</li>
-<li>文本强调：&lt;strong&gt;</li>
-<li>日期或时间：&lt;time&gt;</li>
-<li>段落：&lt;p&gt;</li>
-<li>换行：&lt;br&gt;</li>
-<li>图片：&lt;image&gt;</li>
-<li>短引用文本：&lt;q&gt;<ul>
-<li>引用文本使用标签而非双引号的作用：体现出页面的结构、可以配合CSS改变引用文本的样式；</li>
-</ul>
-</li>
-<li>长引用文本：&lt;blockquote&gt;</li>
-</ul>
+        <h1 id="02-基本命令"><a href="#02-基本命令" class="headerlink" title="02 基本命令"></a>02 基本命令</h1><h2 id="1-系统管理命令"><a href="#1-系统管理命令" class="headerlink" title="1. 系统管理命令"></a>1. 系统管理命令</h2><h4 id="高级管理员："><a href="#高级管理员：" class="headerlink" title="高级管理员："></a>高级管理员：</h4><p>sudo su</p>
+<p>sudo -i</p>
 <span id="more"></span>
 
-<h4 id="2-1-块元素和内联元素"><a href="#2-1-块元素和内联元素" class="headerlink" title="2.1 块元素和内联元素"></a>2.1 块元素和内联元素</h4><ul>
-<li>&lt;blockquote&gt;是一个块（block）元素，而&lt;q&gt;是一个内联（inline）元素。<ul>
-<li>每个块元素都单独显示，就好像前后都有一个换行。</li>
-</ul>
-</li>
-</ul>
-<h4 id="2-2-更多其他标签"><a href="#2-2-更多其他标签" class="headerlink" title="2.2 更多其他标签"></a>2.2 更多其他标签</h4><ul>
-<li><p>列表</p>
-<ul>
-<li>有序列表（ordered list, ol）：使用元素&lt;ol&gt;包围列表项&lt;li&gt;，将作为一个有序列表显示；</li>
-<li>无需列表（unordered list, ul）：使用元素&lt;ul&gt;包围列表项&lt;li&gt;，将作为一个无序列表显示；</li>
-<li>列表项（list item, li）：使用元素&lt;li&gt;作为列表项；</li>
-</ul>
-<p>ex:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Walla Walla, WA<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Magic City, ID<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Bountiful, UT<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Last Chance, CO<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Why, AZ<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Truth or Consequences, NM<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="开关机命令："><a href="#开关机命令：" class="headerlink" title="开关机命令："></a>开关机命令：</h4><p>reboot 重启</p>
+<p>shutdown 关机</p>
+<p>halt 关机</p>
+<p>exit 退出系统</p>
+<p>ctrl+d 退出命令</p>
+<p>ctrl+c 退出当前执行的命令</p>
+<p>pwd 查看当前路径</p>
+<h2 id="2-文件操作命令"><a href="#2-文件操作命令" class="headerlink" title="2. 文件操作命令"></a>2. 文件操作命令</h2><h4 id="ls-显示目录文件"><a href="#ls-显示目录文件" class="headerlink" title="ls: 显示目录文件"></a>ls: 显示目录文件</h4><p>-alh 查看文件类型</p>
+<p>-a 显示目录中所有文件（包括隐藏文件）</p>
+<p>-l 显示文件的详细信息（权限、时间、属主、属组等）</p>
+<p>-h 显示文件大小（自动换算为B、KB、MB、G）</p>
+<p>-d 显示目录本身信息</p>
+<h4 id="cd-切换所在目录"><a href="#cd-切换所在目录" class="headerlink" title="cd: 切换所在目录"></a>cd: 切换所在目录</h4><p>cd ~ 切换到当前用户的家目录</p>
+<p>cd - 切换到上一次目录</p>
+<p>cd . 切换到当前目录</p>
+<p>cd .. 切换到上一级目录（父目录）</p>
+<p>cd &#x2F;xx 切换到指定路径</p>
+<h4 id="find-查找文件"><a href="#find-查找文件" class="headerlink" title="find: 查找文件"></a>find: 查找文件</h4><p>find &#x2F; -name “文件”</p>
+<h4 id="mkdir-创建文件夹"><a href="#mkdir-创建文件夹" class="headerlink" title="mkdir: 创建文件夹"></a>mkdir: 创建文件夹</h4><p>mkdir 文件夹名</p>
+<p>rmdir 删除文件夹</p>
+<h4 id="rm-删除文件"><a href="#rm-删除文件" class="headerlink" title="rm: 删除文件"></a>rm: 删除文件</h4><p>rm -rf 文件夹或者文件名，递归强制删除</p>
+<p>​    -r 递归</p>
+<p>​    -f 强制</p>
+<h4 id="cp-拷贝文件"><a href="#cp-拷贝文件" class="headerlink" title="cp: 拷贝文件"></a>cp: 拷贝文件</h4><p>cp -R 源文件，目标路径（绝对路径）</p>
+<h4 id="mv-移动文件或者重命名"><a href="#mv-移动文件或者重命名" class="headerlink" title="mv: 移动文件或者重命名"></a>mv: 移动文件或者重命名</h4><p>mv 源文件的目标地址</p>
+<h4 id="du-x2F-df-磁盘查看命令"><a href="#du-x2F-df-磁盘查看命令" class="headerlink" title="du&#x2F;df: 磁盘查看命令"></a>du&#x2F;df: 磁盘查看命令</h4><p>df -h 查看磁盘情况</p>
+<p>du -sh* 查看所有目录的大小</p>
+<p>du -sh 目录 查看该目录的大小</p>
+<h4 id="cat-输出文件所有内容"><a href="#cat-输出文件所有内容" class="headerlink" title="cat: 输出文件所有内容"></a>cat: 输出文件所有内容</h4><p>cat filename 输出filename的所有内容</p>
+<p>cat -n filename 输出内容、显示行号</p>
+<h4 id="head-查看文件内容（默认显示前10行）"><a href="#head-查看文件内容（默认显示前10行）" class="headerlink" title="head: 查看文件内容（默认显示前10行）"></a>head: 查看文件内容（默认显示前10行）</h4><p>head -20 查看文件，头开始20行</p>
+<h4 id="tail-查看文件内容（默认显示后10行）"><a href="#tail-查看文件内容（默认显示后10行）" class="headerlink" title="tail: 查看文件内容（默认显示后10行）"></a>tail: 查看文件内容（默认显示后10行）</h4><p>-f filename 动态显示文件后10行（实时刷新）</p>
+<p>-f# filename 动态显示文件后#行（实时刷新）</p>
+<h4 id="echo-向文件内写入内容"><a href="#echo-向文件内写入内容" class="headerlink" title="echo: 向文件内写入内容"></a>echo: 向文件内写入内容</h4><p>echo xxx &gt; filename 用xxx覆盖filename的内容</p>
+<p>echo xxx &gt;&gt; filename 在filename内容新追加一行xxx</p>
+<h2 id="3-vi-编辑器基本命令："><a href="#3-vi-编辑器基本命令：" class="headerlink" title="3. vi 编辑器基本命令："></a>3. vi 编辑器基本命令：</h2><p>i 当前光标编辑</p>
+<p>o 当前光标首行插入</p>
+<p>x 删除当前光标的字符</p>
+<p>u 撤销挡墙操作</p>
+<p>yy 复制整行</p>
+<p>dd 删除整行或者是剪切</p>
+<p>p 粘贴</p>
+<p>gg 回到首行</p>
+<p>#G 切换到第#行</p>
+<p>G 切换到尾行</p>
+<p>&#x2F; 正向查找</p>
+<p>n 查找下一个</p>
+<p>ctrl + f 下翻页</p>
+<p>ctrl + b 上翻页</p>
+<p>: set un 显示行数</p>
+<p>: set noun 不是显示行数</p>
+<p>: %s&#x2F;old&#x2F;new&#x2F;g 查找并且替换</p>
+<h2 id="4-Linux-压缩与解压命令"><a href="#4-Linux-压缩与解压命令" class="headerlink" title="4. Linux 压缩与解压命令"></a>4. Linux 压缩与解压命令</h2><p>tar 命令：</p>
+<p>​    解包：tar zxvf filename.tar</p>
+<p>​    打包：tar czvf filename.tar dirname</p>
+<p>gz 命令：</p>
+<p>​    解压1： gunzip filename.gz</p>
+<p>​    解压2： gzip -d filename.gz</p>
+<p>​    压缩： gzip filename</p>
+<h2 id="5-常用"><a href="#5-常用" class="headerlink" title="5. 常用"></a>5. 常用</h2><p>使用vi编辑器编辑文件：vi filename</p>
+<p>新建文件：touch filename</p>
+<p>新建文件夹：mkdir folder-name</p>
+<p>查看某服务运行状态：sudo systemctl status (mysql)</p>
+<p>更新云服务器上的所有软件状态：sudo apt-get update</p>
+<p>一键更新本机所有软件：sudo apt-get upgrade</p>
+<h2 id="6-常用Apache-管理命令"><a href="#6-常用Apache-管理命令" class="headerlink" title="6. 常用Apache 管理命令"></a>6. 常用Apache 管理命令</h2><p>sudo systemctl start apache2    &#x2F;&#x2F;启动Apache服务器</p>
+<p>sudo systemctl stop apache2    &#x2F;&#x2F;停止</p>
+<p>sudo systemctl restart apache2</p>
+<p>sudo systemctl reload apache2    &#x2F;&#x2F;不重启服务的情况下应用配置更改</p>
+<h2 id="7-mysql相关"><a href="#7-mysql相关" class="headerlink" title="7. mysql相关"></a>7. mysql相关</h2><p>启动mysql：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>ol、ul、li都是块元素；因为在它们前后都有换行；</li>
-</ul>
-</li>
-<li><p>特殊字符</p>
-<p>当需要在Web页面中使用一些HTML的特殊字符时，需要使用其字符相应的字符实体（character entity）的简单缩写来代替。</p>
-<ul>
-<li>&gt;字符的缩写：&amp;gt；</li>
-<li>&lt;字符的缩写：&amp;lt；</li>
-<li>&amp;字符的缩写：&amp;amp；</li>
-<li>版权符号的缩写：&amp;copyright；</li>
-</ul>
-</li>
-</ul>
-<h3 id="3-“连接”"><a href="#3-“连接”" class="headerlink" title="3. “连接”"></a>3. “连接”</h3><ul>
-<li>FTP：文件传输协议（File Transfer Protocol）</li>
-<li>网站发布：p130</li>
-</ul>
-<h4 id="3-1-URL"><a href="#3-1-URL" class="headerlink" title="3.1 URL"></a>3.1 URL</h4><ul>
-<li>URL是什么：在浏览器中输入的Web地址称为URL，统一资源定位符（Uniform Resource Locators）。是一个全局地址，可以用来定位Web上的任意资源。除了指定资源的位置，URL还可以指定用来获取资源的协议。</li>
-<li>URL拆解：<ul>
-<li><code>http/https</code>：指出用来获取资源的协议；</li>
-<li><code>www.xxx.com</code>：网站名；</li>
-<li><code>/index.html/</code>：从根文件夹到资源的绝对路径；</li>
-</ul>
-</li>
-</ul>
-<h4 id="3-2-HTTP"><a href="#3-2-HTTP" class="headerlink" title="3.2 HTTP"></a>3.2 HTTP</h4><ul>
-<li>HTTP是什么：超文本传输协议（Hypertext Transfer Protocol），是在Web上传输超文本文档的公认方法（协议）。</li>
-<li>在每次浏览器的地址栏中输入一个URL时，浏览器就会使用HTTP向服务器请求响应的资源。</li>
-<li>除此之外还有 <code>file</code> 、<code>ftp</code> 、<code>mail</code> 、<code>https</code> 等协议</li>
-</ul>
-<h4 id="3-3-绝对路径"><a href="#3-3-绝对路径" class="headerlink" title="3.3 绝对路径"></a>3.3 绝对路径</h4><ul>
-<li>绝对路径告诉服务器如何从根文件夹到达某个特定的页面或文件，绝对路径总是从“根”开始（用”&#x2F;“表示根）。<ul>
-<li>例如：”&#x2F;cars&#x2F;new&#x2F;inventory.html”</li>
-</ul>
-</li>
-</ul>
-<h4 id="3-4-完善的Web页面"><a href="#3-4-完善的Web页面" class="headerlink" title="3.4 完善的Web页面"></a>3.4 完善的Web页面</h4><ul>
-<li><p>为链接增加标题以便访问：&lt;a&gt;元素有一个 <code>title</code> 属性，就是用来提供链接信息的。</p>
-<p>ex:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://wickedlysmart.com/buzz&quot;</span></span></span><br><span class="line"><span class="tag">   <span class="attr">title</span>=<span class="string">&quot;Read all about caffeine on the Buzz&quot;</span>&gt;</span>Caffeine Buzz<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>想要直接链接到页面中的某个特定位置，使用 &lt;a&gt; 元素的 <code>id</code> 属性，允许直接访问页面中的某个特定点。</p>
-<ul>
-<li><p>先找到页面中要创建锚点的位置，可以是页面上的任何文本。</p>
-</li>
-<li><p>为目标选择一个标识符名，并插入在其 <code>id</code> 属性中；</p>
-</li>
-<li><p>若想要链接到页面中的特定目标，只需在链接后添加一个 “#” ，再加上目标的标识符，如：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;index.html#chai&quot;</span>&gt;</span>See Chai Tea<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-<h4 id="3-5-总结"><a href="#3-5-总结" class="headerlink" title="3.5 总结"></a>3.5 总结</h4><ul>
-<li>将以上几部分结合起来（协议+服务器+网站+绝对路径），就有了一个URL，利用URL，可以请求浏览器从Web获取一个页面。<ul>
-<li>协议部分告诉浏览器应该使用什么方法来获取资源；</li>
-<li>网站部分告诉浏览器要从互联网上的哪个计算机获取资源；</li>
-<li>绝对路径部分告诉服务器要找的资源是哪个资源；</li>
-</ul>
-</li>
-<li>如果浏览器向Web服务器请求一个目录而不是文件时，如：<code>http://www.starbuzzcoffee.com/images/</code>，会发生什么？<ul>
-<li>Web服务器收到类似这样的请求时，会尝试查找这个目录中的一个默认文件。通常默认文件名为”index.html”或”default.html”，找到了就会返回给浏览器显示；</li>
-<li>若请求的URL结尾没有加上’&#x2F;‘，如<code>http://www.starbuzzcoffee.com</code>，若这个目录确实存在，服务器会帮忙加上末尾的斜线，改为<code>http://www.starbuzzcoffee.com/</code>，就会寻找默认文件，等同于<code>http://www.starbuzzcoffee.com/index.html</code></li>
-</ul>
-</li>
-<li>页面工作流程：<ul>
-<li>用户在浏览器中输入<code>http://www.starbuzzcoffee.com/drinks</code>；</li>
-<li>浏览器向Web服务器发送HTTP请求：我能得到文件”&#x2F;drinks&#x2F;“吗？</li>
-<li>服务器得到了目录，寻找目录下的默认文件，并找到了”&#x2F;drinks&#x2F;index.html”文件；</li>
-<li>Web服务器向浏览器发送HTTP响应，并发送文件”&#x2F;drinks&#x2F;index.html”；</li>
-</ul>
-</li>
-<li>端口：网站名就像一个小区地址，端口就像是地址的门牌号。通常Web上所有东西都会传送到一个默认端口。</li>
-</ul>
+
+
+<p>root及密码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create user &#x27;root&#x27;@&#x27;%&#x27; identified by &#x27;Takanash1r1kka@&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>查表的字段信息（不包含字段内容）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">desc table_name; </span><br></pre></td></tr></table></figure>
+
+
+
+<p>mysql8后给予权限：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant all privileges on *.* wo &#x27;mywordpressuser&#x27;@&#x27;%&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>mysql8前给予权限：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant all privileges on *.* wo &#x27;mywordpressuser&#x27;@&#x27;%&#x27; identified by &#x27;(password)&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>设置生效：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure>
+
+<p>创建用户：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create user &#x27;用户名&#x27;@&#x27;主机地址&#x27; identified with mysql_native_password by &#x27;密码&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>修改密码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter user &#x27;用户名&#x27;@&#x27;主机地址&#x27; identified with mysql_native_password by &#x27;新密码&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>查看端口监听状态：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -ant | grep <span class="number">3306</span></span><br></pre></td></tr></table></figure>
+
+<p>修改3306（mysql）端口监听地址：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf_</span><br><span class="line">bind-address=<span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span> 或者注释掉</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-防火墙设置"><a href="#8-防火墙设置" class="headerlink" title="8. 防火墙设置"></a>8. 防火墙设置</h2><p>安装防火墙：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ufw</span><br></pre></td></tr></table></figure>
+
+<p>启用&#x2F;禁用：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw enable/disable</span><br></pre></td></tr></table></figure>
+
+<p>设置白名单模式：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw default deny</span><br></pre></td></tr></table></figure>
+
+<p>查看状态：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw status</span><br></pre></td></tr></table></figure>
+
+<p>允许端口：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">duso ufw allow <span class="number">80</span></span><br></pre></td></tr></table></figure>
+
+<p>禁止端口：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw delete allow <span class="number">80</span></span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -399,7 +411,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://hreatehakunari.com/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" title="《head first HTML and CSS》读书笔记">http://hreatehakunari.com/2022/03/12/《head-first-HTML-and-CSS》读书笔记/</a>
+    <a href="http://hreatehakunari.com/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" title="Linux常用基本命令">http://hreatehakunari.com/2022/03/13/Linux基本命令/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -410,8 +422,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/HTML/" rel="tag"># HTML</a>
-              <a href="/tags/css/" rel="tag"># css</a>
+              <a href="/tags/Linux/" rel="tag"># Linux</a>
           </div>
 
         
@@ -420,13 +431,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="prev" title="初次Hexo博客搭建">
-      <i class="fa fa-chevron-left"></i> 初次Hexo博客搭建
+    <a href="/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="prev" title="《head first HTML and CSS》读书笔记">
+      <i class="fa fa-chevron-left"></i> 《head first HTML and CSS》读书笔记
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" rel="next" title="Linux常用基本命令">
-      Linux常用基本命令 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -486,7 +494,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Web%E8%AF%AD%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">1. Web语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%E8%B6%85%E6%96%87%E6%9C%AC-%E2%80%9CHT%E2%80%9D"><span class="nav-number">2.</span> <span class="nav-text">2. 深入了解超文本 “HT”</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-%E5%9D%97%E5%85%83%E7%B4%A0%E5%92%8C%E5%86%85%E8%81%94%E5%85%83%E7%B4%A0"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 块元素和内联元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-%E6%9B%B4%E5%A4%9A%E5%85%B6%E4%BB%96%E6%A0%87%E7%AD%BE"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 更多其他标签</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E2%80%9C%E8%BF%9E%E6%8E%A5%E2%80%9D"><span class="nav-number">3.</span> <span class="nav-text">3. “连接”</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-URL"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 URL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-HTTP"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 HTTP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 绝对路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-%E5%AE%8C%E5%96%84%E7%9A%84Web%E9%A1%B5%E9%9D%A2"><span class="nav-number">3.4.</span> <span class="nav-text">3.4 完善的Web页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-%E6%80%BB%E7%BB%93"><span class="nav-number">3.5.</span> <span class="nav-text">3.5 总结</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#02-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">02 基本命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.</span> <span class="nav-text">1. 系统管理命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%AB%98%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%EF%BC%9A"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">高级管理员：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E5%85%B3%E6%9C%BA%E5%91%BD%E4%BB%A4%EF%BC%9A"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">开关机命令：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="nav-number">1.2.</span> <span class="nav-text">2. 文件操作命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ls-%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">ls: 显示目录文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cd-%E5%88%87%E6%8D%A2%E6%89%80%E5%9C%A8%E7%9B%AE%E5%BD%95"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">cd: 切换所在目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#find-%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.0.3.</span> <span class="nav-text">find: 查找文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mkdir-%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">1.2.0.4.</span> <span class="nav-text">mkdir: 创建文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rm-%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.0.5.</span> <span class="nav-text">rm: 删除文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cp-%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.0.6.</span> <span class="nav-text">cp: 拷贝文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mv-%E7%A7%BB%E5%8A%A8%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E9%87%8D%E5%91%BD%E5%90%8D"><span class="nav-number">1.2.0.7.</span> <span class="nav-text">mv: 移动文件或者重命名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#du-x2F-df-%E7%A3%81%E7%9B%98%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4"><span class="nav-number">1.2.0.8.</span> <span class="nav-text">du&#x2F;df: 磁盘查看命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cat-%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E6%89%80%E6%9C%89%E5%86%85%E5%AE%B9"><span class="nav-number">1.2.0.9.</span> <span class="nav-text">cat: 输出文件所有内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#head-%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%EF%BC%88%E9%BB%98%E8%AE%A4%E6%98%BE%E7%A4%BA%E5%89%8D10%E8%A1%8C%EF%BC%89"><span class="nav-number">1.2.0.10.</span> <span class="nav-text">head: 查看文件内容（默认显示前10行）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tail-%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%EF%BC%88%E9%BB%98%E8%AE%A4%E6%98%BE%E7%A4%BA%E5%90%8E10%E8%A1%8C%EF%BC%89"><span class="nav-number">1.2.0.11.</span> <span class="nav-text">tail: 查看文件内容（默认显示后10行）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#echo-%E5%90%91%E6%96%87%E4%BB%B6%E5%86%85%E5%86%99%E5%85%A5%E5%86%85%E5%AE%B9"><span class="nav-number">1.2.0.12.</span> <span class="nav-text">echo: 向文件内写入内容</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-vi-%E7%BC%96%E8%BE%91%E5%99%A8%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%EF%BC%9A"><span class="nav-number">1.3.</span> <span class="nav-text">3. vi 编辑器基本命令：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Linux-%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B%E5%91%BD%E4%BB%A4"><span class="nav-number">1.4.</span> <span class="nav-text">4. Linux 压缩与解压命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%B8%B8%E7%94%A8"><span class="nav-number">1.5.</span> <span class="nav-text">5. 常用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E5%B8%B8%E7%94%A8Apache-%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4"><span class="nav-number">1.6.</span> <span class="nav-text">6. 常用Apache 管理命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-mysql%E7%9B%B8%E5%85%B3"><span class="nav-number">1.7.</span> <span class="nav-text">7. mysql相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E9%98%B2%E7%81%AB%E5%A2%99%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.8.</span> <span class="nav-text">8. 防火墙设置</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
