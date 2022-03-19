@@ -22,30 +22,47 @@
     var CONFIG = {"hostname":"hreatehakunari.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Do not go gentle into that good night.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Interstellar">
-<meta property="og:url" content="http://hreatehakunari.com/index.html">
+  <meta name="description" content="1. 创建项目前端： vue init webpack firstproject-web 后端： IDEA 新建项目 -&gt; Spring Initializr -&gt; Java8、Maven -&gt;Dependencies: Web -&gt;  2. 前端登录界面开发及前端的反向代理2.1 设置反向代理先安装 axios ： npm install --save axios mai">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue2+Springboot练手项目">
+<meta property="og:url" content="http://hreatehakunari.com/2022/03/19/Vue2-Springboot%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/index.html">
 <meta property="og:site_name" content="Interstellar">
-<meta property="og:description" content="Do not go gentle into that good night.">
+<meta property="og:description" content="1. 创建项目前端： vue init webpack firstproject-web 后端： IDEA 新建项目 -&gt; Spring Initializr -&gt; Java8、Maven -&gt;Dependencies: Web -&gt;  2. 前端登录界面开发及前端的反向代理2.1 设置反向代理先安装 axios ： npm install --save axios mai">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203181048309.png">
+<meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203190816454.png">
+<meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203181754029.png">
+<meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203182222333.png">
+<meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203182323772.png">
+<meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203182335045.png">
+<meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203190816474.png">
+<meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203182335345.png">
+<meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203182337544.png">
+<meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203190816489.png">
+<meta property="article:published_time" content="2022-03-19T00:14:16.000Z">
+<meta property="article:modified_time" content="2022-03-19T00:20:15.946Z">
 <meta property="article:author" content="HreateHakunari">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="Vue2">
+<meta property="article:tag" content="Springboot">
+<meta property="article:tag" content="项目">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203181048309.png">
 
-<link rel="canonical" href="http://hreatehakunari.com/">
+<link rel="canonical" href="http://hreatehakunari.com/2022/03/19/Vue2-Springboot%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Interstellar</title>
+  <title>Vue2+Springboot练手项目 | Interstellar</title>
   
 
 
@@ -164,9 +181,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -182,10 +200,9 @@
       <meta itemprop="name" content="Interstellar">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/19/Vue2-Springboot%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/" class="post-title-link" itemprop="url">Vue2+Springboot练手项目</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Vue2+Springboot练手项目
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -215,6 +232,13 @@
               <span class="post-meta-item-text">阅读次数：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
   
   <span class="post-meta-item">
     
@@ -239,7 +263,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-创建项目"><a href="#1-创建项目" class="headerlink" title="1. 创建项目"></a>1. 创建项目</h2><p>前端：</p>
+        <h2 id="1-创建项目"><a href="#1-创建项目" class="headerlink" title="1. 创建项目"></a>1. 创建项目</h2><p>前端：</p>
 <p><code>vue init webpack firstproject-web</code></p>
 <p>后端：</p>
 <p>IDEA 新建项目 -&gt; Spring Initializr -&gt; Java8、Maven -&gt;Dependencies: Web -&gt; </p>
@@ -708,7 +732,6 @@
 <p>至于如何部署 war 包我就不多说了，记得把 tomcat 的默认端口修改为 8443（根据前端的转发端口设置）即可。</p>
 <p>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Neuf_Soleil/article/details/97619312">https://blog.csdn.net/Neuf_Soleil/article/details/97619312</a></p>
 
-      
     </div>
 
     
@@ -716,553 +739,75 @@
     
 
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
+        <div class="reward-container">
+  <div>原创技术分享，您的支持将鼓励我继续创作。</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
       
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://hreatehakunari.com/2022/03/16/Vue3%E7%BB%93%E6%9E%84/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="HreateHakunari">
-      <meta itemprop="description" content="Do not go gentle into that good night.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Interstellar">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/16/Vue3%E7%BB%93%E6%9E%84/" class="post-title-link" itemprop="url">Vue3结构</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-03-16 21:15:20 / 修改时间：21:16:51" itemprop="dateCreated datePublished" datetime="2022-03-16T21:15:20+08:00">2022-03-16</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vue/" itemprop="url" rel="index"><span itemprop="name">Vue</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/03/16/Vue3%E7%BB%93%E6%9E%84/" class="post-meta-item leancloud_visitors" data-flag-title="Vue3结构" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/03/16/Vue3%E7%BB%93%E6%9E%84/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/16/Vue3%E7%BB%93%E6%9E%84/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpg" alt="HreateHakunari 微信支付">
+        <p>微信支付</p>
+      </div>
       
-          <h1 id="04-1-Vue3基本结构"><a href="#04-1-Vue3基本结构" class="headerlink" title="04.1 Vue3基本结构"></a>04.1 Vue3基本结构</h1><h2 id="1-初始代码结构"><a href="#1-初始代码结构" class="headerlink" title="1. 初始代码结构"></a>1. 初始代码结构</h2><ul>
-<li><p>main.ts：主入口文件</p>
-<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引入 createApp 函数，创建对应的应用，产生应用的实例对象</span></span><br><span class="line"><span class="keyword">import</span> &#123;createApp&#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="comment">//引入 App 组件（所有组件的父组件）</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./App.vue&#x27;</span></span><br><span class="line"><span class="comment">//创建 App 应用返回对应的实例对象，调用 mount 方法进行挂载，挂载到 id 为 &#x27;#app&#x27; 的页面上面去， app 在 public/index.html 文件中</span></span><br><span class="line"><span class="title function_">createApp</span>(<span class="title class_">App</span>).<span class="title function_">use</span>(<span class="title class_">Antd</span>).<span class="title function_">use</span>(store).<span class="title function_">use</span>(router).<span class="title function_">mount</span>(<span class="string">&#x27;#app&#x27;</span>)</span><br></pre></td></tr></table></figure></li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/03/16/Vue3%E7%BB%93%E6%9E%84/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="HreateHakunari 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
         
-      
-    </div>
 
-    
-    
-    
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>HreateHakunari
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://hreatehakunari.com/2022/03/19/Vue2-Springboot%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/" title="Vue2+Springboot练手项目">http://hreatehakunari.com/2022/03/19/Vue2-Springboot练手项目/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
 
-    
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/Vue/" rel="tag"># Vue</a>
+              <a href="/tags/Vue2/" rel="tag"># Vue2</a>
+              <a href="/tags/Springboot/" rel="tag"># Springboot</a>
+              <a href="/tags/%E9%A1%B9%E7%9B%AE/" rel="tag"># 项目</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://hreatehakunari.com/2022/03/14/Vue%E8%AF%A6%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="HreateHakunari">
-      <meta itemprop="description" content="Do not go gentle into that good night.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Interstellar">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/14/Vue%E8%AF%A6%E8%A7%A3/" class="post-title-link" itemprop="url">Vue详解</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-03-14 15:15:23 / 修改时间：15:17:22" itemprop="dateCreated datePublished" datetime="2022-03-14T15:15:23+08:00">2022-03-14</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vue/" itemprop="url" rel="index"><span itemprop="name">Vue</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/03/14/Vue%E8%AF%A6%E8%A7%A3/" class="post-meta-item leancloud_visitors" data-flag-title="Vue详解" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/03/14/Vue%E8%AF%A6%E8%A7%A3/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/14/Vue%E8%AF%A6%E8%A7%A3/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><ul>
-<li>英文官网：<a target="_blank" rel="noopener" href="https://vuejs.org/%EF%BC%9B%E4%B8%AD%E6%96%87%E5%AE%98%E7%BD%91%EF%BC%9Ahttps://cn.vuejs.org/">https://vuejs.org/；中文官网：https://cn.vuejs.org/</a></li>
-<li>介绍与描述：<ul>
-<li>动态构建用户界面的渐进式 JavaScript 框架；</li>
-</ul>
-</li>
-<li>Vue的特点：<ul>
-<li>遵循 MVVM模式；</li>
-<li>编码简洁，体积小，运行效率高，适合移动&#x2F;PC端开发；</li>
-<li>它本身只关注UI，也可以引入其他第三方库开发项目；</li>
-</ul>
-</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/03/14/Vue%E8%AF%A6%E8%A7%A3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
 
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://hreatehakunari.com/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="HreateHakunari">
-      <meta itemprop="description" content="Do not go gentle into that good night.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Interstellar">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Linux常用基本命令</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-03-13 17:41:00 / 修改时间：17:42:17" itemprop="dateCreated datePublished" datetime="2022-03-13T17:41:00+08:00">2022-03-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" class="post-meta-item leancloud_visitors" data-flag-title="Linux常用基本命令" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="02-基本命令"><a href="#02-基本命令" class="headerlink" title="02 基本命令"></a>02 基本命令</h1><h2 id="1-系统管理命令"><a href="#1-系统管理命令" class="headerlink" title="1. 系统管理命令"></a>1. 系统管理命令</h2><h4 id="高级管理员："><a href="#高级管理员：" class="headerlink" title="高级管理员："></a>高级管理员：</h4><p>sudo su</p>
-<p>sudo -i</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/03/13/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/03/16/Vue3%E7%BB%93%E6%9E%84/" rel="prev" title="Vue3结构">
+      <i class="fa fa-chevron-left"></i> Vue3结构
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://hreatehakunari.com/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="HreateHakunari">
-      <meta itemprop="description" content="Do not go gentle into that good night.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Interstellar">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">《head first HTML and CSS》读书笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-03-12 16:37:46 / 修改时间：17:51:57" itemprop="dateCreated datePublished" datetime="2022-03-12T16:37:46+08:00">2022-03-12</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="post-meta-item leancloud_visitors" data-flag-title="《head first HTML and CSS》读书笔记" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="1-Web语言"><a href="#1-Web语言" class="headerlink" title="1. Web语言"></a>1. Web语言</h3><ul>
-<li><strong>Web服务器</strong>：负责一直等待来自Web浏览器的请求（如：请求Web页面、图像或声音等资源），并把找到的资源发回给浏览器。</li>
-<li><strong>Web浏览器</strong>：向Web服务器发送请求，获取HTML页面并显示。</li>
-</ul>
-<h3 id="2-深入了解超文本-“HT”"><a href="#2-深入了解超文本-“HT”" class="headerlink" title="2. 深入了解超文本 “HT”"></a>2. 深入了解超文本 “HT”</h3><ul>
-<li>超链接：&lt;a href&#x3D;”…”&gt;标签可以创建一个超文本链接到另一个Web页面。</li>
-<li>“ ..&#x2F; “ 代表父文件夹；</li>
-<li>不同方式展示文本：&lt;e&gt;</li>
-<li>文本强调：&lt;strong&gt;</li>
-<li>日期或时间：&lt;time&gt;</li>
-<li>段落：&lt;p&gt;</li>
-<li>换行：&lt;br&gt;</li>
-<li>图片：&lt;image&gt;</li>
-<li>短引用文本：&lt;q&gt;<ul>
-<li>引用文本使用标签而非双引号的作用：体现出页面的结构、可以配合CSS改变引用文本的样式；</li>
-</ul>
-</li>
-<li>长引用文本：&lt;blockquote&gt;</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/03/12/%E3%80%8Ahead-first-HTML-and-CSS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://hreatehakunari.com/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="HreateHakunari">
-      <meta itemprop="description" content="Do not go gentle into that good night.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Interstellar">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">初次Hexo博客搭建</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-03-12 15:36:43 / 修改时间：17:52:05" itemprop="dateCreated datePublished" datetime="2022-03-12T15:36:43+08:00">2022-03-12</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-meta-item leancloud_visitors" data-flag-title="初次Hexo博客搭建" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="1-设置菜单"><a href="#1-设置菜单" class="headerlink" title="1. 设置菜单"></a>1. 设置菜单</h4><ul>
-<li><p>主题配置文件，即 <code>themes/next</code> 下的_config.yml，查找menu；</p>
-</li>
-<li><p>“||”前面的是目标链接，后面是图标名称，next 使用的图标全是<a href="https://link.zhihu.com/?target=http://www.fontawesome.com.cn/faicons/%23web-application">图标库 - Font Awesome 中文网</a>的，有想用的图标直接在fontawesome上找图标的名称就行。</p>
-</li>
-<li><p>新添加的菜单需要翻译对应的中文，打开<code>theme/next/languages/zh-CN.yml</code>，在menu下设置：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">	<span class="attr">home:</span> <span class="string">首页</span></span><br><span class="line">    <span class="attr">archives:</span> <span class="string">归档</span></span><br><span class="line">    <span class="attr">categories:</span> <span class="string">分类</span></span><br><span class="line">    <span class="attr">tags:</span> <span class="string">标签</span></span><br><span class="line">    <span class="attr">about:</span> <span class="string">关于</span></span><br><span class="line">    <span class="attr">resources:</span> <span class="string">资源</span></span><br><span class="line">    <span class="attr">search:</span> <span class="string">搜索</span></span><br></pre></td></tr></table></figure>
-
-<p>若要添加 menu ，在此添加一个即可，上面的 resources 就是另外添加的。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/03/12/%E5%88%9D%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -1309,6 +854,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-number">1.</span> <span class="nav-text">1. 创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%89%8D%E7%AB%AF%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E5%8F%8A%E5%89%8D%E7%AB%AF%E7%9A%84%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">2. 前端登录界面开发及前端的反向代理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E8%AE%BE%E7%BD%AE%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 设置反向代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E9%85%8D%E7%BD%AE%E9%A1%B5%E9%9D%A2%E8%B7%AF%E7%94%B1"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 配置页面路由</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E8%B7%A8%E5%9F%9F%E6%94%AF%E6%8C%81"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 跨域支持</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%90%8E%E7%AB%AF%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91"><span class="nav-number">3.</span> <span class="nav-text">3. 后端登录功能开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E5%88%9B%E5%BB%BA%E5%AF%B9%E5%BA%94%E7%9A%84-User-%E7%B1%BB%E5%8F%8A%E4%BC%A0%E5%9B%9EAPI%E6%B6%88%E6%81%AF%E7%9A%84-Result-%E7%B1%BB"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 创建对应的 User 类及传回API消息的 Result 类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E5%88%9B%E5%BB%BALoginController"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 创建LoginController</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E4%BF%AE%E6%94%B9%E5%90%8E%E7%AB%AF%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E7%AB%AF%E5%8F%A3%EF%BC%9A8443"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 修改后端程序执行端口：8443</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%BC%95%E5%85%A5%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">4.</span> <span class="nav-text">4. 引入数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E9%AA%8C%E8%AF%81%E7%99%BB%E5%BD%95"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 使用数据库验证登录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-1-%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE"><span class="nav-number">4.1.1.</span> <span class="nav-text">4.1.1 项目相关配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-2-%E7%99%BB%E5%BD%95%E6%8E%A7%E5%88%B6%E5%99%A8"><span class="nav-number">4.1.2.</span> <span class="nav-text">4.1.2 登录控制器</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AE%8C%E5%96%84-User-%E7%B1%BB"><span class="nav-number">4.1.2.1.</span> <span class="nav-text">完善 User 类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#UserDAO"><span class="nav-number">4.1.2.2.</span> <span class="nav-text">UserDAO</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#UserService"><span class="nav-number">4.1.2.3.</span> <span class="nav-text">UserService</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#LoginController"><span class="nav-number">4.1.2.4.</span> <span class="nav-text">LoginController</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E4%BD%BF%E7%94%A8-Element-ui"><span class="nav-number">5.</span> <span class="nav-text">5. 使用 Element-ui</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-%E5%AE%89%E8%A3%85"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-%E5%BC%95%E5%85%A5Element"><span class="nav-number">5.2.</span> <span class="nav-text">5.2 引入Element</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-%E4%BC%98%E5%8C%96%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2"><span class="nav-number">5.3.</span> <span class="nav-text">5.3 优化登录页面</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1%E4%B8%8E%E6%8B%A6%E6%88%AA%E5%99%A8"><span class="nav-number">6.</span> <span class="nav-text">6. 前端路由与拦截器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1"><span class="nav-number">6.1.</span> <span class="nav-text">6.1 前端路由</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-%E4%BD%BF%E7%94%A8-History-%E6%A8%A1%E5%BC%8F"><span class="nav-number">6.2.</span> <span class="nav-text">6.2 使用 History 模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-%E5%90%8E%E7%AB%AF%E7%99%BB%E5%BD%95%E6%8B%A6%E6%88%AA%E5%99%A8"><span class="nav-number">6.3.</span> <span class="nav-text">6.3 后端登录拦截器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6-3-1-LoginController"><span class="nav-number">6.3.1.</span> <span class="nav-text">6.3.1 LoginController</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-3-2-LoginInterceptor"><span class="nav-number">6.3.2.</span> <span class="nav-text">6.3.2 LoginInterceptor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-3-3-WebConfiger"><span class="nav-number">6.3.3.</span> <span class="nav-text">6.3.3 WebConfiger</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-3-4-%E6%95%88%E6%9E%9C%E6%B5%8B%E8%AF%95"><span class="nav-number">6.3.4.</span> <span class="nav-text">6.3.4 效果测试</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-4-Vuex-%E4%B8%8E%E5%89%8D%E7%AB%AF%E7%99%BB%E5%BD%95%E6%8B%A6%E6%88%AA%E5%99%A8"><span class="nav-number">6.4.</span> <span class="nav-text">6.4 Vuex 与前端登录拦截器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6-4-1-%E5%BC%95%E5%85%A5-Vuex-%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%85%A8%E5%B1%80%E7%9A%84%E5%BA%93%EF%BC%8C%E7%94%A8%E6%9D%A5%E8%A3%85%E7%99%BB%E5%BD%95%E5%AE%8C%E6%88%90%E7%9A%84%E7%94%A8%E6%88%B7"><span class="nav-number">6.4.1.</span> <span class="nav-text">6.4.1 引入 Vuex - 创建一个全局的库，用来装登录完成的用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-4-2-%E4%BF%AE%E6%94%B9%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE-%E8%AE%BE%E7%BD%AE%E9%9C%80%E8%A6%81%E6%8B%A6%E6%88%AA%E7%9A%84%E8%B7%AF%E7%94%B1"><span class="nav-number">6.4.2.</span> <span class="nav-text">6.4.2 修改路由配置 - 设置需要拦截的路由</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-4-3-%E4%BD%BF%E7%94%A8%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E6%8B%A6%E6%88%AA-%E5%85%A8%E5%B1%80%E8%AE%BE%E7%BD%AE%E8%B7%AF%E7%94%B1%E6%98%AF%E5%90%A6%E6%8B%A6%E6%88%AA"><span class="nav-number">6.4.3.</span> <span class="nav-text">6.4.3 使用钩子函数判断是否拦截 - 全局设置路由是否拦截</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-4-4-%E4%BF%AE%E6%94%B9-Login-vue-%E8%AE%BE%E7%BD%AE%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E5%90%8E%E5%B0%86%E7%94%A8%E6%88%B7%E5%8A%A0%E5%85%A5%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="nav-number">6.4.4.</span> <span class="nav-text">6.4.4 修改 Login.vue - 设置登录成功后将用户加入全局变量</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E5%AF%BC%E8%88%AA%E6%A0%8F%E4%B8%8E%E5%9B%BE%E4%B9%A6%E9%A1%B5%E9%9D%A2%E8%AE%BE%E8%AE%A1"><span class="nav-number">7.</span> <span class="nav-text">7. 导航栏与图书页面设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">7.1.</span> <span class="nav-text">7.1 导航栏的实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-1-1-%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE"><span class="nav-number">7.1.1.</span> <span class="nav-text">7.1.1 路由配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-1-2-%E4%BD%BF%E7%94%A8-NavMenu-%E7%BB%84%E4%BB%B6"><span class="nav-number">7.1.2.</span> <span class="nav-text">7.1.2 使用 NavMenu 组件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2-%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2"><span class="nav-number">7.2.</span> <span class="nav-text">7.2 图书管理页面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-2-1-LibraryIndex-vue"><span class="nav-number">7.2.1.</span> <span class="nav-text">7.2.1 LibraryIndex.vue</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-2-2-SideMenu-vue"><span class="nav-number">7.2.2.</span> <span class="nav-text">7.2.2 SideMenu.vue</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-2-3-Books-vue"><span class="nav-number">7.2.3.</span> <span class="nav-text">7.2.3 Books.vue</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5"><span class="nav-number">8.</span> <span class="nav-text">8. 数据库设计与增删改查</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1"><span class="nav-number">8.1.</span> <span class="nav-text">8.1 数据库设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-2-%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5"><span class="nav-number">8.2.</span> <span class="nav-text">8.2 增删改查</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#8-2-1-pojo"><span class="nav-number">8.2.1.</span> <span class="nav-text">8.2.1 pojo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-2-2-dao%E5%B1%82"><span class="nav-number">8.2.2.</span> <span class="nav-text">8.2.2 dao层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-2-3-Service-%E5%B1%82"><span class="nav-number">8.2.3.</span> <span class="nav-text">8.2.3 Service 层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-2-4-Controller-%E5%B1%82"><span class="nav-number">8.2.4.</span> <span class="nav-text">8.2.4 Controller 层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-2-5-%E6%B5%8B%E8%AF%95%E6%8E%A5%E5%8F%A3"><span class="nav-number">8.2.5.</span> <span class="nav-text">8.2.5 测试接口</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-3-%E5%90%8E%E7%AB%AF%E5%B0%8F%E6%80%BB%E7%BB%93"><span class="nav-number">8.3.</span> <span class="nav-text">8.3 后端小总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD%E7%9A%84%E5%89%8D%E7%AB%AF%E5%AE%9E%E7%8E%B0"><span class="nav-number">9.</span> <span class="nav-text">9. 核心功能的前端实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#9-1-%E4%BB%A3%E7%A0%81%E9%83%A8%E5%88%86"><span class="nav-number">9.1.</span> <span class="nav-text">9.1 代码部分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#9-1-1-EditForm-vue%EF%BC%88%E6%96%B0%E5%A2%9E%EF%BC%89"><span class="nav-number">9.1.1.</span> <span class="nav-text">9.1.1 EditForm.vue（新增）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-1-2-SearchBar-vue%EF%BC%88%E6%96%B0%E5%A2%9E%EF%BC%89"><span class="nav-number">9.1.2.</span> <span class="nav-text">9.1.2 SearchBar.vue（新增）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-1-3-Books-vue%EF%BC%88%E4%BF%AE%E6%94%B9%EF%BC%89"><span class="nav-number">9.1.3.</span> <span class="nav-text">9.1.3 Books.vue（修改）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-1-4-LibraryIndex-vue%EF%BC%88%E4%BF%AE%E6%94%B9%EF%BC%89"><span class="nav-number">9.1.4.</span> <span class="nav-text">9.1.4 LibraryIndex.vue（修改）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-1-5-SideMenu-vue%EF%BC%88%E4%BF%AE%E6%94%B9%EF%BC%89"><span class="nav-number">9.1.5.</span> <span class="nav-text">9.1.5 SideMenu.vue（修改）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-1-6-%E6%B5%8B%E8%AF%95"><span class="nav-number">9.1.6.</span> <span class="nav-text">9.1.6 测试</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-2-%E8%A6%81%E7%82%B9%E8%AE%B2%E8%A7%A3"><span class="nav-number">9.2.</span> <span class="nav-text">9.2 要点讲解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#9-2-1-%E6%9F%A5%E8%AF%A2%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0"><span class="nav-number">9.2.1.</span> <span class="nav-text">9.2.1 查询功能实现</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-number">9.2.1.1.</span> <span class="nav-text">页面的初始化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E6%98%BE%E7%A4%BA"><span class="nav-number">9.2.1.2.</span> <span class="nav-text">分类显示</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1"><span class="nav-number">9.2.1.2.1.</span> <span class="nav-text">组件之间的通信</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2%E6%A0%8F%E6%9F%A5%E8%AF%A2"><span class="nav-number">9.2.1.3.</span> <span class="nav-text">搜索栏查询</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-2-2-%E5%A2%9E%E5%8A%A0%E3%80%81%E4%BF%AE%E6%94%B9%E3%80%81%E5%88%A0%E9%99%A4"><span class="nav-number">9.2.2.</span> <span class="nav-text">9.2.2 增加、修改、删除</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E5%92%8C%E4%BF%AE%E6%94%B9"><span class="nav-number">9.2.2.1.</span> <span class="nav-text">增加和修改</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%A0%E9%99%A4"><span class="nav-number">9.2.2.2.</span> <span class="nav-text">删除</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2"><span class="nav-number">10.</span> <span class="nav-text">10. 图片上传与项目的打包部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#10-1-%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0"><span class="nav-number">10.1.</span> <span class="nav-text">10.1 图片上传</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#10-1-1-%E5%89%8D%E7%AB%AF%E9%83%A8%E5%88%86"><span class="nav-number">10.1.1.</span> <span class="nav-text">10.1.1 前端部分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-1-2-%E5%90%8E%E7%AB%AF%E9%83%A8%E5%88%86"><span class="nav-number">10.1.2.</span> <span class="nav-text">10.1.2 后端部分</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-2-%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">10.2.</span> <span class="nav-text">10.2 部署项目到服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#10-2-1-%E9%80%89%E6%8B%A9%E4%B8%80"><span class="nav-number">10.2.1.</span> <span class="nav-text">10.2.1 选择一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-2-2-%E9%80%89%E6%8B%A9%E4%BA%8C"><span class="nav-number">10.2.2.</span> <span class="nav-text">10.2.2 选择二</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
