@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203182337544.png">
 <meta property="og:image" content="https://gitee.com/hreatedotaer/markdown-images/raw/master/202203190816489.png">
 <meta property="article:published_time" content="2022-03-19T00:14:16.000Z">
-<meta property="article:modified_time" content="2022-03-19T00:20:15.946Z">
+<meta property="article:modified_time" content="2022-03-19T14:40:23.751Z">
 <meta property="article:author" content="HreateHakunari">
 <meta property="article:tag" content="Vue">
 <meta property="article:tag" content="Vue2">
@@ -212,7 +212,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-03-19 08:14:16 / 修改时间：08:20:15" itemprop="dateCreated datePublished" datetime="2022-03-19T08:14:16+08:00">2022-03-19</time>
+              <time title="创建时间：2022-03-19 08:14:16 / 修改时间：22:40:23" itemprop="dateCreated datePublished" datetime="2022-03-19T08:14:16+08:00">2022-03-19</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -270,6 +270,8 @@
 <h2 id="2-前端登录界面开发及前端的反向代理"><a href="#2-前端登录界面开发及前端的反向代理" class="headerlink" title="2. 前端登录界面开发及前端的反向代理"></a>2. 前端登录界面开发及前端的反向代理</h2><h3 id="2-1-设置反向代理"><a href="#2-1-设置反向代理" class="headerlink" title="2.1 设置反向代理"></a>2.1 设置反向代理</h3><p>先安装 axios ： <code>npm install --save axios</code></p>
 <p><code>main.js</code></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">&#x27;axios&#x27;</span></span><br><span class="line"><span class="comment">// 设置反向代理，前端请求默认发送到 http://localhost:8443/api</span></span><br><span class="line">axios.<span class="property">defaults</span>.<span class="property">baseURL</span> = <span class="string">&#x27;http://localhost:8443/api&#x27;</span></span><br><span class="line"><span class="comment">// 全局注册，之后可能在其他组件中通过 axios 发送数据</span></span><br><span class="line"><span class="title class_">Vue</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">$axios</span> = axios</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
 
 <h3 id="2-2-配置页面路由"><a href="#2-2-配置页面路由" class="headerlink" title="2.2 配置页面路由"></a>2.2 配置页面路由</h3><p>为了登录成功之后能跳转页面</p>
 <p><code>router\index.js</code></p>
